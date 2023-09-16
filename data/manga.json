@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Naruto, Vol. 4",
+        "price": 15.99,
+        "stock": 15,
+        "releaseDate": 2012,
+        "author": "Masashi Kishimoto"
+    },
+    {
+        "name": "Bleach, Vol. 1",
+        "price": 16.99,
+        "stock": 50,
+        "releaseDate": 2011,
+        "author": "Tite Kubo"
+    },
+    {
+        "name": "One punch Mannnnnnnnnnnnnnnnnn",
+        "price": 11.99,
+        "stock": 44,
+        "releaseDate": 2010,
+        "author": "Murata Sensei"
+    },
+    {
+        "name": "Gintama",
+        "price": 444.99,
+        "stock": 44,
+        "releaseDate": 2012,
+        "author": "Robindranath Tagore"
+    },
+    {
+        "name": "Gintama",
+        "price": 112.99,
+        "stock": 44,
+        "releaseDate": 2008,
+        "author": "Hoshino Ai"
+    },
+    {
+        "name": "Gintama",
+        "price": 118.99,
+        "stock": 44,
+        "releaseDate": 2001,
+        "author": "Hoshino Ai"
+    },
+    {
+        "name": "Gintama",
+        "price": 111.99,
+        "stock": 44,
+        "releaseDate": 2012,
+        "author": "Hoshino Ai"
+    },
+    {
+        "name": "Vinland Saga",
+        "price": 11.99,
+        "stock": 44,
+        "releaseDate": 2018,
+        "author": "Kazi Nazrul Islam"
+    },
+    {
+        "name": "Vinland Saga",
+        "price": 11.99,
+        "stock": 44,
+        "releaseDate": 2021,
+        "author": "Jim bhai"
+    }
+]

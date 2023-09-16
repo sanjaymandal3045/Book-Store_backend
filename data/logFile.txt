@@ -1,0 +1,124 @@
+/api/products/getAll || Status: Successfully accessed  || Date: 15/9/2023 || Time: 14:9:36 BST
+/api/products/getAll || Status: apiRoute is not defined || Date: 15/9/2023 || Time: 14:10:14 BST
+/api/products/filterProducts || Status: Successfully accessed  || Date: 15/9/2023 || Time: 14:11:55 BST
+/api/review/getReviewByUser || Status: Successfully accessed  || Date: 15/9/2023 || Time: 14:52:50 BST
+/api/review/addReview || Status: Successfully accessed  || Date: 15/9/2023 || Time: 14:54:15 BST
+/api/products/getAll || Status: Successfully accessed  || Date: 15/9/2023 || Time: 15:11:25 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 15:14:22 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 15:15:5 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 15:16:40 BST
+/api/cart/addToCart || Status: Cast to ObjectId failed for value "" (type string) at path "_id" for model "books" || Date: 15/9/2023 || Time: 15:16:40 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 15:22:55 BST
+/api/cart/addToCart || Status: Cast to ObjectId failed for value "" (type string) at path "_id" for model "User" || Date: 15/9/2023 || Time: 15:22:55 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:15:51 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:17:10 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:28:30 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:29:5 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:29:44 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:30:38 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:32:53 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:33:17 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:36:44 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:37:11 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:37:19 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:38:14 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:39:2 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:43:58 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:45:4 BST
+/api/cart/addToCart || Status: totalQuantity is not defined || Date: 15/9/2023 || Time: 16:45:7 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 16:45:24 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 17:18:43 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 18:24:11 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 18:24:33 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 18:24:57 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 18:25:8 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 15/9/2023 || Time: 18:26:59 BST
+/api/products/getAll || Status: Successfully accessed  || Date: 16/9/2023 || Time: 0:10:20 BST
+/api/products/filterProducts || Status: Successfully accessed  || Date: 16/9/2023 || Time: 0:18:10 BST
+/api/products/filterProducts?genre=Adventure || Status: Successfully accessed  || Date: 16/9/2023 || Time: 0:18:17 BST
+/api/products/filterProducts?genre=Adventure || Status: Successfully accessed  || Date: 16/9/2023 || Time: 13:4:22 BST
+/api/products/filterProducts?sortParams=price&sortOrder=desc&genre=Adventure || Status: Successfully accessed  || Date: 16/9/2023 || Time: 13:6:29 BST
+/api/products/filterProducts?page=1&limit=5&sortParams=price&sortOrder=desc&genre=Adventure || Status: Successfully accessed  || Date: 16/9/2023 || Time: 13:6:37 BST
+/api/products/filterProducts?page=1&limit=5&sortParams=price&sortOrder=desc&genre=Adventure || Status: Successfully accessed  || Date: 16/9/2023 || Time: 17:28:58 BST
+/api/products/getAll || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:35:37 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:36:10 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:36:21 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:40:55 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:41:20 BST
+/api/cart/checkOut || Status: Cart is not defined || Date: 16/9/2023 || Time: 20:41:20 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:42:8 BST
+/api/cart/checkOut || Status: Transaction validation failed: total: Path `total` is required., user: Path `user` is required. || Date: 16/9/2023 || Time: 20:42:10 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:49:31 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required., total: Path `total` is required. || Date: 16/9/2023 || Time: 20:49:32 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:49:56 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required., total: Path `total` is required. || Date: 16/9/2023 || Time: 20:49:57 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:51:13 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required., total: Path `total` is required. || Date: 16/9/2023 || Time: 20:51:14 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:52:28 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required., total: Path `total` is required. || Date: 16/9/2023 || Time: 20:52:29 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:53:38 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required., total: Path `total` is required. || Date: 16/9/2023 || Time: 20:53:39 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:54:36 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required., cart: Path `cart` is required. || Date: 16/9/2023 || Time: 20:54:37 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 20:57:58 BST
+/api/cart/checkOut || Status: Transaction validation failed: user: Path `user` is required. || Date: 16/9/2023 || Time: 20:57:59 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:2:19 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:6:23 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:6:24 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:6:27 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:6:28 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:7:14 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:7:15 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:7:52 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:7:54 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:9:13 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:9:14 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:10:8 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:10:9 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:11:44 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:11:45 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:14:50 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:14:52 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:15:42 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:16:43 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:0 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:5 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:7 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:14 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:35 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:42 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:17:46 BST
+/api/products/filterProducts?search=Silver || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:36:43 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:36:57 BST
+/api/cart/checkOut || Status: books validation failed: releaseDate: Cast to Number failed for value "2023-08-12" (type string) at path "releaseDate" || Date: 16/9/2023 || Time: 21:36:58 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:43:56 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:45:28 BST
+/api/cart/checkOut || Status: books validation failed: releaseDate: Cast to Number failed for value "2023-08-12" (type string) at path "releaseDate" || Date: 16/9/2023 || Time: 21:45:29 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:46:47 BST
+/api/cart/checkOut || Status: books validation failed: releaseDate: Cast to Number failed for value "2023-08-12" (type string) at path "releaseDate" || Date: 16/9/2023 || Time: 21:46:50 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:48:27 BST
+/api/products/filterProducts?search=Silver || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:48:56 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:49:5 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:49:6 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:49:9 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:49:10 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:50:27 BST
+/api/cart/addToCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:50:27 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:54:16 BST
+/api/products/filterProducts?search=Silver || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:54:26 BST
+/api/products/filterProducts?search=Tanaka || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:55:0 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:55:31 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:55:44 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:55:59 BST
+/api/products/filterProducts?search=Tanaka || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:56:9 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 21:56:52 BST
+/api/cart/removeFromCart || Status: Cannot read properties of undefined (reading 'quantity') || Date: 16/9/2023 || Time: 21:56:53 BST
+/api/cart/removeFromCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 22:0:8 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:21:18 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:21:21 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:21:23 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:21:35 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:37 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:47 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:56 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:59 BST
