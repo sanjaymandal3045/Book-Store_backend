@@ -31,6 +31,22 @@ class Review {
         return res.status(400).send(failure("Product id invalid"));
       }
 
+
+      //Checking if the user has brought the product or not
+      const isbrought = await transactionModel.findOne({
+        user: userId,
+        'products.product': productId,
+      })
+      if (isbrought) {
+        console.log("Brought!!!", isbrought);
+      }
+      else {
+        return res
+          .status(400)
+          .send(success("Buy the product to give a review!!"));
+      }
+
+
       let existingReview = await ReviewModel.findOne({
         productId: productId,
       });

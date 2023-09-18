@@ -3,6 +3,7 @@ const ProductModel = require("../model/Product");
 const { success, failure } = require("../util/common");
 const HTTP_STATUS = require("../constants/statusCodes");
 const logger = require("../util/log");
+const discountModel = require("../model/Discount");
 const mongoose = require("mongoose");
 const UserModel = require("../model/user");
 const CartModel = require("../model/cart");
@@ -17,8 +18,29 @@ class Product {
     try {
       const apiRoute = req.originalUrl + " || " + "Status: Successfully accessed ";
       logger.logMessage(apiRoute);
-    
+
       const allProducts = await ProductModel.find({});
+
+      // const currentTime = new Date().toISOString();
+      // const dateObj = new Date(currentTime);
+      // const year = dateObj.getFullYear();
+      // const month = dateObj.getMonth() + 1; // Months are 0-indexed, so add 1
+      // const day = dateObj.getDate();
+      // const hour = dateObj.getHours();
+      // const minute = dateObj.getMinutes();
+      // const second = dateObj.getSeconds();
+
+      // const currentTime1 =  `${day}-${month}-${year} ${hour}:${minute}:${second}`;
+
+      const currentTime2 = new Date("2023-05-01 01:20:45");
+
+      const currentTime = new Date();
+
+      if(currentTime>currentTime2){
+        console.log("currentTime<currentTime2");
+      }
+      
+
       if (allProducts.length > 0) {
         return res
           .status(HTTP_STATUS.OK)
@@ -27,7 +49,7 @@ class Product {
 
       return res.status(HTTP_STATUS.NOT_FOUND).send(success("No Products found"));
     } catch (error) {
-      const apiRoute = req.originalUrl + " || Status: "+error.message;
+      const apiRoute = req.originalUrl + " || Status: " + error.message;
       logger.logMessage(apiRoute);
       return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).send(failure("Internal server error"));
     }
@@ -47,7 +69,7 @@ class Product {
       // product = product.toObject();
 
       console.log(product.length)
-  
+
       // const products = await ProductModel.getAll();
       let totalData = 0;
       let {
@@ -181,7 +203,7 @@ class Product {
       return res.status(200).send(success("No Products were found"));
     } catch (error) {
       console.log(error.message);
-      const apiRoute = req.originalUrl + " || Status: "+error.message;
+      const apiRoute = req.originalUrl + " || Status: " + error.message;
       logger.logMessage(apiRoute);
       return res.status(500).send(failure("Internal server error"));
     }

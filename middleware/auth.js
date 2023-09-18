@@ -18,7 +18,7 @@ const isAuthorized = (req, res, next) => {
 
     if (validate) {
       const decoded = jsonwebtoken.decode(jwtToken, (verify = true));
-      console.log("Decoded:::::::::::::::::",decoded.user._id, userId);
+      // console.log("Decoded:::::::::::::::::",decoded.user._id, userId);
       // if(decoded.user._id == userId){
         next();
       // }
@@ -50,7 +50,7 @@ const isAdmin = (req, res, next) => {
     }
     const jwtToken = req.headers.authorization.split(" ")[1];
       const decoded = jsonwebtoken.decode(jwtToken, (verify = true));
-      // console.log("Decoded:::::::::::::::::",decoded);
+      console.log("Decoded:::::::::::::::::",decoded);
       if (decoded.user.access === "admin") {
         next();
     } else {
