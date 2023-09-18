@@ -17,7 +17,8 @@ const reviewSchema = new mongoose.Schema({
                 userId: {
                     type: mongoose.Types.ObjectId,
                     ref: "User",
-                    required: true,
+                    required: false,
+                    default: "Deleted User",
                 },
                 _id: false,
             },

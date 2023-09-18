@@ -17,7 +17,9 @@ routes.get("/filterProducts", FilterValidator.filterValidation, ProductControlle
 // routes.delete("/deleteById", ProductController.deleteById);
 // routes.put("/updateById", validator.updateValidation, ProductController.updateById);
 
-routes.post("/viewTransactionsById", AuthValidator.isAuthorized,AuthValidator.isUser,cartValidator.getCartValidation, transactionController.getAllTransaction);
+routes.post("/viewTransactionsById", AuthValidator.isAuthorized,AuthValidator.isUser,cartValidator.getCartValidation, transactionController.getAllTransactionByUser);
+routes.get("/viewTransactionsByAdmin", AuthValidator.isAuthorized,AuthValidator.isAdmin, transactionController.getAllTransactionByAdmin);
+
 // routes.post("/create", validator.createTransactionValidation, transactionController.createTransaction);
 
 

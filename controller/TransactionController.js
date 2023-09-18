@@ -8,13 +8,42 @@ const productModel = require("../model/Product");
 const User = require("../model/user");
 
 class TransactionProduct {
-  async getAllTransaction(req, res) {
+  async getAllTransactionByUser(req, res) {
     try {
-      const { userid } = req.body;
+      const { userId } = req.body;
       let totalValue = 0;
       let transactionResult = await transactionModel
-        .find({ user: userid }).select('-user')
+        .find({ user: userId }).select('-user')
         // .populate("user", "-access")
+        .populate("products.product", "-stock");
+
+      if (transactionResult.length > 0) {
+        totalValue = transactionResult.reduce((sum, transaction) => {
+          const { total } = transaction;
+          return sum + total;
+        }, 0);
+
+        transactionResult.push({ "lifetime order amount ": totalValue });
+
+        return res
+          .status(200)
+          .send(
+            success("Successfully received all transactions", transactionResult)
+          );
+      } else {
+        return res.status(400).send(success("No Transactions Found"));
+      }
+    } catch (error) {
+      console.log("Found: " + error);
+    }
+  }
+
+  async getAllTransactionByAdmin(req, res) {
+    try {
+      let totalValue = 0;
+      let transactionResult = await transactionModel
+        .find()//.select('-user')
+        .populate("user", "-balance -access -_id")
         .populate("products.product", "-stock");
 
       if (transactionResult.length > 0) {

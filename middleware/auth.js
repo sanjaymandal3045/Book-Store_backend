@@ -10,14 +10,18 @@ const isAuthorized = (req, res, next) => {
         .status(statusCodes.UNAUTHORIZED)
         .send(failure("Unauthorized access"));
     }
+
+    const{userId} = req.body;
     const jwtToken = req.headers.authorization.split(" ")[1];
 
     const validate = jsonwebtoken.verify(jwtToken, process.env.SECRET_KEY);
 
     if (validate) {
       const decoded = jsonwebtoken.decode(jwtToken, (verify = true));
-      // console.log("Decoded:::::::::::::::::",decoded);
+      console.log("Decoded:::::::::::::::::",decoded.user._id, userId);
+      // if(decoded.user._id == userId){
         next();
+      // }
     } else {
       throw new Error();
     }

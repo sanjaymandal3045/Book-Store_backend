@@ -134,6 +134,7 @@ const validator = {
       .isString()
       .withMessage("phoneNo must be a Number"),
   ],
+
   signin: [
     body("email")
       .not()
@@ -154,6 +155,7 @@ const validator = {
       .isString()
       .withMessage("Password must be a string"),
   ],
+
   createProductValidation: [
     body("price")
       .exists()
@@ -222,6 +224,37 @@ const validator = {
       .equals(0)
       .withMessage("quantity was not provided in the property"),
   ],
+
+  addFundingValidation: [
+    body("userId")
+      .exists()
+      .withMessage("This request must contain userId property")
+      .bail()
+      .not()
+      .equals("")
+      .withMessage("Name was not provided in the property")
+      .bail()
+      .isString()
+      .withMessage("userId must be a string"),
+
+      body("amount")
+      .exists()
+      .withMessage("This request must contain amount property")
+      .bail()
+      .not()
+      .equals("")
+      .withMessage("amount was not provided in the property")
+      .bail()
+      .isNumeric()
+      .withMessage("amount must be a Number")
+      .bail()
+      .custom((value, { req, res }) => {
+        if (value <= 0) {
+          throw new Error("Amount must be greater than 0");
+        }
+        return true;
+      }),
+  ]
 };
 
 module.exports = validator;

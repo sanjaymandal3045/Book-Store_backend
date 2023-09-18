@@ -3,16 +3,16 @@ const { body, query, param } = require("express-validator");
 
 const cartValidator = {
   cartValidation: [
-    body("userid")
+    body("userId")
       .exists()
-      .withMessage("userid not provided")
+      .withMessage("userId not provided")
       .bail()
       .not()
       .equals("")
-      .withMessage("userid was not provided in the property")
+      .withMessage("userId was not provided in the property")
       .bail()
       .isString()
-      .withMessage("userid should be string"),
+      .withMessage("userId should be string"),
 
     body("productid")
       .exists()
@@ -36,15 +36,15 @@ const cartValidator = {
   ],
 
   getCartValidation:[
-    body("userid")
+    body("userId")
       .exists()
-      .withMessage("userid not provided")
+      .withMessage("userId not provided")
       .bail()
       .notEmpty()
-      .withMessage("userid was not provided in the property")
+      .withMessage("userId was not provided in the property")
       .bail()
       .isString()
-      .withMessage("userid should be string"),
+      .withMessage("userId should be string"),
   ]
 };
 

@@ -13,19 +13,19 @@ class CartClass {
 
   async getCartById(req, res) {
     try {
-      const { userid } = req.body;
+      const { userId } = req.body;
 
       const Validation = validationResult(req).array();
       if (Validation.length > 0) {
         return res.status(422).send(failure("Invalid input", Validation));
       }
 
-      const user = await UserModel.findById(userid);
+      const user = await UserModel.findById(userId);
       if (!user) {
         return res.status(400).send(failure("User id does not exist"));
       }
 
-      let cart = await CartModel.findOne({ user: userid });
+      let cart = await CartModel.findOne({ user: userId });
       if(cart.products.length>0){
         return res.status(200).send(success("Successfully got cart products", cart.products));
       }else{
@@ -41,7 +41,7 @@ class CartClass {
 
   async addToCart(req, res) {
     try {
-      const { userid, productid, quantity } = req.body;
+      const { userId, productid, quantity } = req.body;
 
       // console.log(quantity);
 
@@ -53,7 +53,7 @@ class CartClass {
       const apiRoute = req.originalUrl + " || " + "Status: Successfully accessed ";
       logger.logMessage(apiRoute);
 
-      const user = await UserModel.findById(userid);
+      const user = await UserModel.findById(userId);
       if (!user) {
         return res.status(400).send(failure("User id does not exist"));
       }
@@ -64,7 +64,7 @@ class CartClass {
       }
 
 
-      let cart = await CartModel.findOne({ user: userid });
+      let cart = await CartModel.findOne({ user: userId });
 
       if(cart){
         if(cart.products.length>0){
@@ -82,7 +82,7 @@ class CartClass {
 
       if (!cart) {
         cart = await CartModel.create({
-          user: userid,
+          user: userId,
           products: [
             {
               product: productid,
@@ -124,7 +124,7 @@ class CartClass {
 
   async removeFromCart(req, res) {
     try {
-      const { userid, productid, quantity } = req.body;
+      const { userId, productid, quantity } = req.body;
 
       const Validation = validationResult(req).array();
       if (Validation.length > 0) {
@@ -134,7 +134,7 @@ class CartClass {
       const apiRoute = req.originalUrl + " || " + "Status: Successfully accessed ";
       logger.logMessage(apiRoute);
 
-      const user = await UserModel.findById(userid);
+      const user = await UserModel.findById(userId);
       if (!user) {
         return res.status(400).send(failure("User id does not exist"));
       }
@@ -144,7 +144,7 @@ class CartClass {
         return res.status(400).send(failure("Product id invalid"));
       }
 
-      const cart = await CartModel.findOne({ user: userid });
+      const cart = await CartModel.findOne({ user: userId });
 
       if(cart){
         if(cart.products.length>0){
@@ -195,56 +195,59 @@ class CartClass {
 
   async checkOut(req, res) {
     try {
-      const { userid } = req.body;
+      const { userId } = req.body;
 
       const apiRoute = req.originalUrl + " || " + "Status: Successfully accessed ";
       logger.logMessage(apiRoute);
 
-      const user = await UserModel.findById(userid);
-      console.log("USER:::::::::::::::::",user);
+      const user = await UserModel.findById(userId);
+      // console.log("USER:::::::::::::::::",user);
       if (!user) {
         return res.status(400).send(failure("User id does not exist"));
       }
 
-      const cart = await CartModel.findOne({ user: userid });
+      const cart = await CartModel.findOne({ user: userId });
 
       if (!cart) {
         return res.status(400).send(failure("User does not have a cart"));
       } else {
+
+        console.log(user.balance,cart.total);
+        if(user.balance<cart.total){
+          const balanceDiff = cart.total - user.balance;
+          return res.status(400).send(failure(`insufficient balance, please add more ${balanceDiff} BDT`));
+        }
+
         const newTransaction = await transactionModel.create({
-          user : userid,
+          user : userId,
           products: cart.products,
           total: cart.total
         })
 
         for (const productInfo of cart.products) {
-          const productid = productInfo.product; // Get the product ID
-          const quantity = productInfo.quantity; // Get the quantity
+          const productid = productInfo.product; 
+          const quantity = productInfo.quantity; 
     
-          // Find the corresponding product in the Product collection by its ID
           const product = await ProductModel.findById(productid);
 
           console.log("product",product);
     
           if (!product) {
             console.error(`Product with ID ${productid} not found`);
-            continue; // Skip to the next product if not found
+            continue; 
           }
     
-          // Update the product's properties, for example, the stock
-          product.stock -= quantity; // Adjust stock based on the quantity
+          product.stock -= quantity; 
     
-          // Save the updated product
           await product.save();
     
-          // console.log(`Updated product ${product.name}, ID: ${product._id}`);
         }
 
+        user.balance = user.balance - cart.total;
         cart.products = [];
-
         cart.total = 0;
-
         await cart.save();
+        await user.save();
 
         return res.status(200).send(success("Checked Out Successfully, New transaction created.",newTransaction));
       }

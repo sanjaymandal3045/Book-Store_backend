@@ -122,3 +122,93 @@
 /api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:47 BST
 /api/cart/addToCart || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:56 BST
 /api/cart/checkOut || Status: Successfully accessed  || Date: 16/9/2023 || Time: 23:29:59 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:13:58 BST
+/api/products/getAll || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:14:24 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:48:14 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:48:48 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:49:1 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:50:4 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:52:46 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:53:31 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:53:43 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:54:22 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 8:56:49 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:28:24 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:28:43 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:30:26 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:31:11 BST
+/api/user/addFund || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:34:19 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 9:34:34 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:27:31 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:28:1 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:28:16 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:44:46 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:45:31 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:51:11 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:51:21 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:51:33 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:51:48 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:52:22 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:52:51 BST
+/api/admin/updateUserData || Status: Cast to ObjectId failed for value "{ userId: '6503bc61198beea7a5261135' }" (type Object) at path "_id" for model "User" || Date: 18/9/2023 || Time: 10:52:51 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:53:23 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:55:1 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:55:19 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:56:0 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:57:33 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 10:57:55 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:0:14 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:0:43 BST
+/api/admin/updateUserData || Status: allUsers is not defined || Date: 18/9/2023 || Time: 11:0:43 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:0:45 BST
+/api/admin/updateUserData || Status: allUsers is not defined || Date: 18/9/2023 || Time: 11:0:46 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:1:16 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:1:30 BST
+/api/admin/updateUserData || Status: Cannot read properties of null (reading 'length') || Date: 18/9/2023 || Time: 11:1:32 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:1:59 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:3:32 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:4:0 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:4:38 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:8:5 BST
+/api/admin/updateUserData || Status: user.save is not a function || Date: 18/9/2023 || Time: 11:8:6 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:8:33 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:10:40 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:11:45 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:12:9 BST
+/api/admin/updateUserData || Status: Class constructor ObjectId cannot be invoked without 'new' || Date: 18/9/2023 || Time: 11:13:1 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:13:49 BST
+/api/admin/getAllUser || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:14:0 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:14:41 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:15:36 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:16:29 BST
+/api/admin/updateUserData || Status: Cannot read properties of null (reading 'length') || Date: 18/9/2023 || Time: 11:16:29 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:19:16 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:24:10 BST
+/api/admin/updateUserData || Status: userId is not defined || Date: 18/9/2023 || Time: 11:24:10 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:24:36 BST
+/api/admin/updateUserData || Status: updatedName is not defined || Date: 18/9/2023 || Time: 11:24:36 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:24:38 BST
+/api/admin/updateUserData || Status: updatedName is not defined || Date: 18/9/2023 || Time: 11:24:38 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:25:13 BST
+/api/admin/updateUserData || Status: allUsers is not defined || Date: 18/9/2023 || Time: 11:25:13 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:25:26 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:26:20 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:27:56 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:28:42 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:31:40 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:31:52 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:32:1 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:33:37 BST
+/api/admin/updateUserData || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:35:11 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:47:44 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:47:52 BST
+/api/review/addReview || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:48:59 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:50:18 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:50:50 BST
+/api/cart/checkOut || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:51:38 BST
+/api/cart/getCartById || Status: Cannot read properties of null (reading 'products') || Date: 18/9/2023 || Time: 11:52:2 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:52:45 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:54:41 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 11:55:21 BST
+/api/cart/addToCart || Status: Successfully accessed  || Date: 18/9/2023 || Time: 12:16:8 BST
+/api/cart/getCartById || Status: Cannot read properties of null (reading 'products') || Date: 18/9/2023 || Time: 12:16:27 BST
